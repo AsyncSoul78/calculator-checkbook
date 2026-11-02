@@ -1,0 +1,1 @@
+{"name":"calculator-checkbook","version":"1.0.0","private":true,"license":"MIT","engines":{"node":">=18"},"scripts":{"test":"node --test test/*.test.js","check":"node scripts/checkbook.js data/example.csv","table":"node scripts/checkbook.js data/example.csv --markdown"}}
