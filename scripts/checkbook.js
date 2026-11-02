@@ -51,7 +51,7 @@ if (require.main === module) {
   try {
     const rows = check(fs.readFileSync(process.argv[2] || 'data/example.csv', 'utf8'));
     if (process.argv.includes('--markdown')) console.log(markdown(rows));
-    else { console.log(`${rows.length} observations: ${rows.filter(r => r.pass).length} match, ${rows.filter(r => !r.pass).length} differ.`); for (const r of rows.filter(r => !r.pass)) console.log(`${r.id}: expected ${r.expected}, observed ${r.observed}`); }
+    else { const failed=rows.filter(r=>!r.pass);console.log(`${rows.length} observations: ${rows.length-failed.length} match, ${failed.length} differ.`);for(const r of failed.slice(0,process.argv.includes('--verbose')?failed.length:3))console.log(`${r.id}: expected ${r.expected}, observed ${r.observed}`);if(failed.length>3&&!process.argv.includes('--verbose'))console.log('Use --verbose for all mismatches.'); }
     if (rows.some(r => !r.pass)) process.exitCode = 1;
   } catch (e) { console.error(e.message); process.exitCode = 2; }
 }

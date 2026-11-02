@@ -19,6 +19,8 @@ The supplied example is an illustrative template, not a claim that every listed 
 
 The CSV header is `case,kind,expected,observed,tolerance,note`. Use `number` with a nonnegative decimal tolerance, or `text` with an empty tolerance. Blank observations, repeated identifiers and non-finite numbers are rejected. Quote fields containing commas. A mismatch exits with code 1; invalid input exits with code 2.
 
+Default output is a summary and at most three mismatches. Add `--verbose` for all mismatches, or `--markdown` for the full table.
+
 ## Why keep the displayed value?
 
 A display may round a nominal tire diameter of 634.3 mm to 634 mm. The example row accepts half a millimetre of absolute display rounding. Choose a tolerance appropriate to your own task; this one is not a tire-fitment rule.
