@@ -34,7 +34,7 @@ We maintain the linked tools. Try it here: pick the calculator that matches your
 | Task | Calculator | Note |
 |---|---|---|
 | Tire dimensions | [Tire size comparison](https://tire-calc.com/) | Compare nominal diameter and circumference; vehicle approval is a separate question. |
-| Scientific expressions | [Scientific calculator](https://toolster.net/scientific_calculator) | Record the angle mode along with the expression. |
+| Scientific expressions | [Scientific calculator](https://toolster.net/scientific_calculator) | Record the angle mode along with the expression. [Video: use DEG to find sin(30°)](https://youtu.be/PyZ-H-lF53Y). |
 | Height and weight | [BMI calculator](https://toolster.net/bmi_calculator) | Keep the unit system with the input; the notebook provides no health interpretation. |
 | Plotting | [Graphing calculator](https://toolster.net/graphing_calculator) | Keep the expression and plotted range in your note. |
 | Fractions | [Fractions calculator](https://toolster.net/fractions_calculator) | Use exact text when mixed-number formatting matters. |
